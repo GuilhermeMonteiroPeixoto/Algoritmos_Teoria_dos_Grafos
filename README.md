@@ -9,4 +9,8 @@ Alunos: Guilherme Monteiro e Artur Cavalcante
 ## Algoritmo Bellman
 
 
-O algoritmo Bellman Ford nos ajuda a encontrar o caminho mais curto de um vértice para todos os outros vértices de um gráfico ponderado.
+É um algoritmo que nos auxilia a encontrar o caminho mais curto de um vértice para todos os outros vértices de um gráfico ponderado.
+
+## Algoritmo Dijkstra 
+
+É um algoritmo que calcula o caminho de custo mínimo entre vértices de um grafo.
