@@ -2,4 +2,6 @@
  
 Alunos: Guilherme Monteiro e Artur Cavalcante
 
-Algoritmo Prim
+Algoritm Prim
+Algoritm Bellman
+
