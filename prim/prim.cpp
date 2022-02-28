@@ -1,3 +1,7 @@
+/*
+ algoritmo de Prim é um algoritmo guloso que encontra uma árvore geradora mínima para um grafo não direcionado ponderado.
+*/
+
 #include <iostream>
 #include <sstream>
 #include <limits.h>

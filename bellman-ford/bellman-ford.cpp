@@ -1,3 +1,7 @@
+/*
+Bellman-Ford é um algoritmo que calcula os caminhos mais curtos de um único vértice de origem para todos os outros vértices em um dígrafo ponderado .
+*/
+
 #include <iostream>
 #include <sstream>
 #include <limits.h>
@@ -78,14 +82,10 @@ void BellmanFord(struct Graph* graph, int src)
 
 int main(){
     
-    int V, E;
-    
+    int V, E; 
     scanf("%d %d", &V, &E);
-
     Graph* graphs = createGraph(V, E);
-
     int i, src, dest, weight;
-    
     for(i = 0; i < E; i++){
         scanf("%d %d %d", &src, &dest, &weight);
         graphs->path[i].src = src;
