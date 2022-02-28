@@ -2,6 +2,7 @@
 #include <sstream>
 #include <limits.h>
 using namespace std;
+
 #include "../utils/utils.h"
 
 struct Node {
@@ -37,6 +38,7 @@ Grafo::Grafo(Link links[], int e_contador, int v_contador) {
     int src_ver = links[i].src;
     int dest_ver = links[i].dest;
     int peso_ver = links[i].peso;
+    
     Node* new_node = addNode(dest_ver, peso_ver, this->head[src_ver]);
     this->head[src_ver] = new_node;
   }
@@ -90,6 +92,7 @@ void Grafo::display(ostream* output) {
 
 Grafo criargrafo(istream* input, bool undirected) {
   int v_contador, e_contador;
+  
   *input >> v_contador >> e_contador;
   if (undirected) {
     e_contador *= 2;
@@ -133,6 +136,7 @@ int prim(Grafo* grafo, int src, bool solution, ostream* output) {
   int n_visited = 1;
   visited[src] = 1;
   int** solution_list = solucaografo(v_contador);
+  
   while (n_visited < v_contador) {
     int current_min = INT_MAX;
     int pos_i, pos_j = 0;
